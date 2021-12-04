@@ -87,6 +87,11 @@ img {
   margin-right: 16px;
   font-size: 17px;
 }
+footer{
+  color: white;
+        text-align: center;
+        margin: 80px auto 20px;
+}
 @media screen and (max-width: 600px) {
   .topnav a, .topnav input[type=text] {
     float: none;
