@@ -22,20 +22,17 @@ img {
     font-size: 1.5cm; 
     text-shadow: black;
     color: #ffffff;
-    
+    width: 100%;
+
   }
-@media all and (max-width: 500px) {
-  h1{
-    font-size: 2.5cm; 
-  }
-}
-  .topnav input[type=text] {
+.topnav input[type=text] {
     border: 1px solid #ccc;
+    width: 100%;
   }
 html{
   scroll-behavior: smooth;
 }
-  
+
 
 
 
