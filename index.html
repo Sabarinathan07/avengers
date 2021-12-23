@@ -16,6 +16,7 @@
   gtag('config', 'G-P3J425CC1P');
 </script>
       <link rel="stylesheet" href="style.css">
+      <link href="search.js">
         <center><h1>AVENGERS</h1></center>
     </head>  
         <body>
@@ -24,152 +25,161 @@
             <a href="https://www.instagram.com/avengersmoviescollection/?utm_medium=copy_link"> <img src= "icons8-instagram-24.png"  ></a>
             <a href="https://www.youtube.com/channel/UCiSwwEl6kOrQHO8bw3-hAkA"><img src= "icons8-youtube-24.png" ></a>
           </div>
-          <class="section">
-              <ul class="grid">
+          <script>
+          function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+          
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByTagName("a")[0];
+              txtValue = a.textContent || a.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+              } else {
+                li[i].style.display = "none";
+              }
+            }
+          }
+        </script>
+        <center>
+        <div class="search-box">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for movies">
+        <a class="search-btn">
+        </a>
+        </div>
+      </center>
+              <ul class="grid" id="myUL">
                 <li>
                   <div class="container">
-                    <a href="theAvengers.html"> <img class="poster" src= "theAvengers.jpg"></a><div class="top-left">RATING <br> &#11088; 8.0/10</div>
+                    <a href="theAvengers.html"> <img class="poster" src= "theAvengers.jpg">TheAvengers</a><div class="top-left">RATING <br> &#11088; 8.0/10</div>
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="ageOfUltron.html"><img class="poster" src= "ageOfUltron.jpg"></a><div class="top-left">RATING <br> &#11088; 7.8/10</div>
+                    <a href="ageOfUltron.html"><img class="poster" src= "ageOfUltron.jpg">AvengersageOfUltron</a><div class="top-left">RATING <br> &#11088; 7.8/10</div>
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="civilWar.html"><img class="poster" src= "civilWar.jpg"></a><div class="top-left">RATING <br> &#11088; 7.8/10</div>
+                    <a href="civilWar.html"><img class="poster" src= "civilWar.jpg">AvengerscivilWar</a><div class="top-left">RATING <br> &#11088; 7.8/10</div>
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="infinityWar.html"><img class="poster" src= "infinityWar.jpg"></a><div class="top-left">RATING <br> &#11088; 8.4/10</div>
+                    <a href="infinityWar.html"><img class="poster" src= "infinityWar.jpg">AvengersinfinityWar</a><div class="top-left">RATING <br> &#11088; 8.4/10</div>
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="endgame.html"><img class="poster" src= "endgame.jpg"></a><div class="top-left">RATING <br> &#11088; 8.4/10</div>
+                    <a href="endgame.html"><img class="poster" src= "endgame.jpg">Avengersendgame</a><div class="top-left">RATING <br> &#11088; 8.4/10</div>
                   </div>
-                </li>
-              </ul>
-            <br><br>
-              <ul class="grid">
+                </li><br><br><br><br>
                 <li>
                   <div class="container">
-                    <a href="ironMan.html"> <img class="poster" src= "ironMan.jpg"></a><div class="top-left">RATING <br> &#11088; 7.9/10</div>
+                    <a href="ironMan.html"> <img class="poster" src= "ironMan.jpg">ironMan</a><div class="top-left">RATING <br> &#11088; 7.9/10</div>
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="ironMan2.html"> <img class="poster" src= "ironMan2.jpg"></a><div class="top-left">RATING <br> &#11088; 7.0/10</div>
+                    <a href="ironMan2.html"> <img class="poster" src= "ironMan2.jpg">ironMan2</a><div class="top-left">RATING <br> &#11088; 7.0/10</div>
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="ironMan3.html"> <img class="poster" src= "ironMan3.jpg"></a><div class="top-left">RATING <br> &#11088; 7.1/10</div>
+                    <a href="ironMan3.html"> <img class="poster" src= "ironMan3.jpg">ironMan3</a><div class="top-left">RATING <br> &#11088; 7.1/10</div>
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="HomeComing.html"> <img class="poster" src= "HomeComing.jpg"></a><div class="top-left">RATING <br> &#11088; 7.4/10</div>
+                    <a href="HomeComing.html"> <img class="poster" src= "HomeComing.jpg">spiderManHomeComing</a><div class="top-left">RATING <br> &#11088; 7.4/10</div>
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="spiderMan.html"><img class="poster" src= "spiderMan.jpg"></a><div class="top-left">RATING <br> &#11088; 7.4/10</div>
+                    <a href="spiderMan.html"><img class="poster" src= "spiderMan.jpg">spiderMan</a><div class="top-left">RATING <br> &#11088; 7.4/10</div>
                   </div>
-                </li>
-              </ul>
-              <br><br>
-
-              <ul class="grid">
+                </li><br><br><br><br>
                 <li>
                   <div class="container">
-                    <a href="thor.html"> <img class="poster" src= "thor.jpg"></a><div class="top-left">RATING <br> &#11088; 7.0/10</div>
+                    <a href="thor.html"> <img class="poster" src= "thor.jpg">thor</a><div class="top-left">RATING <br> &#11088; 7.0/10</div>
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="thorRagnarok.html"> <img class="poster" src= "thorRagnarok.jpg"></a><div class="top-left">RATING <br> &#11088; 7.9/10</div>
+                    <a href="thorRagnarok.html"> <img class="poster" src= "thorRagnarok.jpg">thorRagnarok</a><div class="top-left">RATING <br> &#11088; 7.9/10</div>
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="thorDarkWorld.html"> <img class="poster" src="thorDarkWorld.jpg"></a><div class="top-left">RATING <br> &#11088; 6.8/10</div>    
+                    <a href="thorDarkWorld.html"> <img class="poster" src="thorDarkWorld.jpg">thorDarkWorld</a><div class="top-left">RATING <br> &#11088; 6.8/10</div>    
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="captainAmerica.html"> <img class="poster" src= "captainAmerica.jpg"></a><div class="top-left">RATING <br> &#11088; 6.9/10</div>
+                    <a href="captainAmerica.html"> <img class="poster" src= "captainAmerica.jpg">captainAmerica</a><div class="top-left">RATING <br> &#11088; 6.9/10</div>
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="winterSoldier.html"> <img class="poster" src= "winterSoldier.jpg"></a><div class="top-left">RATING <br> &#11088; 7.7/10</div>                                       
+                    <a href="winterSoldier.html"> <img class="poster" src= "winterSoldier.jpg">captainAmericawinterSoldier</a><div class="top-left">RATING <br> &#11088; 7.7/10</div>                                       
                   </div>
-                </li>
-              </ul>
-              <br><br>
-
-              <ul class="grid">
+                </li><br><br><br><br>
                 <li>
                   <div class="container">
-                    <a href="antMan.html"> <img class="poster" src= "antMan.jpg"></a><div class="top-left">RATING <br> &#11088; 7.3/10</div>
+                    <a href="antMan.html"> <img class="poster" src= "antMan.jpg">antMan</a><div class="top-left">RATING <br> &#11088; 7.3/10</div>
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="antManAndWasp.html"> <img class="poster" src= "antManAndWasp.jpg"></a><div class="top-left">RATING <br> &#11088; 7.0/10</div>               
+                    <a href="antManAndWasp.html"> <img class="poster" src= "antManAndWasp.jpg">antManAndWasp</a><div class="top-left">RATING <br> &#11088; 7.0/10</div>               
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="gog.html"> <img class="poster" src= "guardiansOfTheGalaxy.jpg"></a><div class="top-left">RATING <br> &#11088; 8.0/10</div>
+                    <a href="gog.html"> <img class="poster" src= "guardiansOfTheGalaxy.jpg">guardiansOfTheGalaxy</a><div class="top-left">RATING <br> &#11088; 8.0/10</div>
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="gog2.html"> <img class="poster" src= "guardiansOfTheGalaxy2.jpg"></a><div class="top-left">RATING <br> &#11088; 7.6/10</div>                            
+                    <a href="gog2.html"> <img class="poster" src= "guardiansOfTheGalaxy2.jpg">guardiansOfTheGalaxy2</a><div class="top-left">RATING <br> &#11088; 7.6/10</div>                            
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="captianMarvel.html"><img class="poster" src= "captianMarvel.jpg"></a><div class="top-left">RATING <br> &#11088; 6.8/10</div>           
+                    <a href="captianMarvel.html"><img class="poster" src= "captianMarvel.jpg">captianMarvel</a><div class="top-left">RATING <br> &#11088; 6.8/10</div>           
                   </div>
-                </li>
-              </ul>
-              <br><br>
-
-              <ul class="grid">
+                </li><br><br><br><br>
                 <li>
                   <div class="container">
-                    <a href="incredibleHulk.html"> <img class="poster" src="incredibleHulk.jpg"></a><div class="top-left">RATING <br> &#11088; 6.6/10</div>
+                    <a href="incredibleHulk.html"> <img class="poster" src="incredibleHulk.jpg">incredibleHulk</a><div class="top-left">RATING <br> &#11088; 6.6/10</div>
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="blackWidow.html"><img class="poster" src= "blackWidow.jpg"></a><div class="top-left">RATING <br> &#11088; 6.7/10</div>
+                    <a href="blackWidow.html"><img class="poster" src= "blackWidow.jpg">blackWidow</a><div class="top-left">RATING <br> &#11088; 6.7/10</div>
                   </div>
                 </li>
                 <li>
                   <div class="container">
-                    <a href="blackPanther.html"><img class="poster" src= "blackPanther.jpg"></a><div class="top-left">RATING <br> &#11088; 7.3/10</div>
+                    <a href="blackPanther.html"><img class="poster" src= "blackPanther.jpg">blackPanther</a><div class="top-left">RATING <br> &#11088; 7.3/10</div>
                   </div>
                 </li>
               <li>
                 <div class="container">
-                  <a href="dr.strange.html"><img class="poster" src= "dr.strange.jpg"></a><div class="top-left">RATING <br> &#11088; 7.3/10</div>
+                  <a href="dr.strange.html"><img class="poster" src= "dr.strange.jpg">dr.strange</a><div class="top-left">RATING <br> &#11088; 7.3/10</div>
                 </div>
               </li>
               <li>
                 <div class="container">
-                  <a href="ShangChi.html"><img class="poster" src= "ShangChi.jpg"></a><div class="top-left">RATING <br> &#11088; 7.5/10</div>
+                  <a href="ShangChi.html"><img class="poster" src= "ShangChi.jpg">ShangChi</a><div class="top-left">RATING <br> &#11088; 7.5/10</div>
                 </div>
               </li>
               </ul>
             </div>
         </body>
-<footer>
-      MARVEL
-</footer>
 </html>
